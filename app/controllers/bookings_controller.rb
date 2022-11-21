@@ -1,6 +1,7 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: :destroy
   before_action :set_list, only: %i[new create]
+  
   def show
     @bookings = Booking.all
   end
