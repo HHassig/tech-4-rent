@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  root to: "pages#home"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root to: "laptops#home"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :laptops do
+    resources :bookings, only: %i[index, new, create]
+  end
+  resources :bookings, only: %i[show, edit, update, destroy]
 end
