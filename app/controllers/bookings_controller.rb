@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: :destroy
   before_action :set_list, only: %i[new create]
-  
+
   def show
     @bookings = Booking.all
   end
@@ -33,7 +33,7 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:renter, :laptop, :duration)
+    params.require(:user, :laptop, :duration)
   end
 
   def set_booking
