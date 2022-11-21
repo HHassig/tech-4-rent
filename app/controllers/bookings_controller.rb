@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: :destroy
-  # before_action :set_list, only: %i[new create]
+  before_action :set_list, only: %i[new create]
   def show
     @bookings = Booking.all
   end
@@ -39,7 +39,7 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
   end
 
-  # def set_list
-  #   @list = List.find(params[:list_id])
-  # end
+  def set_list
+    @bookings = Booking.find(params[:booking_id])
+  end
 end
