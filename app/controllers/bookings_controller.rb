@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  # before_action :set_bookmark, only: :destroy
+  before_action :set_bookmark, only: :destroy
   # before_action :set_list, only: %i[new create]
   def show
     @bookings = Booking.all
@@ -35,9 +35,9 @@ class BookingsController < ApplicationController
     params.require(:renter, :laptop, :duration)
   end
 
-  # def set_bookmark
-  #   @bookmark = Bookmark.find(params[:id])
-  # end
+  def set_bookmark
+    @bookmark = Bookmark.find(params[:id])
+  end
 
   # def set_list
   #   @list = List.find(params[:list_id])
