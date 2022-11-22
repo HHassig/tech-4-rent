@@ -1,15 +1,17 @@
 .sidebar {
   height: 100%;
   width: 0;
-  position: fixed;
   top: 0;
   left: 0;
+  position: fixed;
+  z-index: 2;
   background-color: rgba(94, 91, 91, 0.9);
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 60px;
   /* Place content 60px from the top */
   transition: 0.5s;
+  backdrop-filter: blur(5px);
   /* 0.5 second transition effect to slide in the sidebar */
 }
 
@@ -48,6 +50,8 @@
   color: white;
   padding: 10px 15px;
   border: none;
+  position: fixed;
+  z-index: 4;
 }
 
 .openbtn:hover {
