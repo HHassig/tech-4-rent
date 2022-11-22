@@ -1,0 +1,101 @@
+photo,year_built,brand,model,screen_size,hard_drive,ram,user,price
+https://i.imgur.com/L6dRHRt.jpg,2022,apple,air,11,256,4,1,8.99
+https://i.imgur.com/L6dRHRt.jpg,2021,apple,air,11,512,8,2,9.99
+https://i.imgur.com/L6dRHRt.jpg,2020,apple,air,11,1024,12,3,10.99
+https://i.imgur.com/L6dRHRt.jpg,2019,apple,air,11,256,16,4,6.99
+https://i.imgur.com/L6dRHRt.jpg,2018,apple,air,11,256,8,5,7.99
+https://i.imgur.com/L6dRHRt.jpg,2017,apple,air,11,256,8,6,8.99
+https://i.imgur.com/L6dRHRt.jpg,2022,apple,air,11,512,8,7,9.99
+https://i.imgur.com/L6dRHRt.jpg,2021,apple,air,11,1024,8,8,10.99
+https://i.imgur.com/L6dRHRt.jpg,2020,apple,air,11,256,8,9,8.99
+https://i.imgur.com/l5Nguja.png,2022,apple,pro,16,512,8,10,9.99
+https://i.imgur.com/l5Nguja.png,2021,apple,pro,16,256,12,11,10.99
+https://i.imgur.com/l5Nguja.png,2020,apple,pro,13,512,12,12,8.99
+https://i.imgur.com/l5Nguja.png,2022,apple,pro,13,256,12,13,9.99
+https://i.imgur.com/l5Nguja.png,2021,apple,pro,13,512,16,14,10.99
+https://i.imgur.com/l5Nguja.png,2020,apple,pro,14,1024,16,15,6.99
+https://i.imgur.com/l5Nguja.png,2022,apple,pro,14,256,16,16,7.99
+https://i.imgur.com/l5Nguja.png,2021,apple,pro,14,512,4,17,8.99
+https://i.imgur.com/l5Nguja.png,2020,apple,pro,14,1024,4,18,9.99
+https://i.imgur.com/l5Nguja.png,2019,apple,pro,14,256,4,19,10.99
+https://i.imgur.com/l5Nguja.png,2018,apple,pro,14,512,4,20,6.99
+https://i.imgur.com/l5Nguja.png,2017,apple,pro,14,1024,4,21,7.99
+https://i.imgur.com/euggB8q.png,2022,asus,zenbook,14,256,4,22,6.99
+https://i.imgur.com/euggB8q.png,2021,asus,zenbook,14,512,8,23,7.99
+https://i.imgur.com/euggB8q.png,2020,asus,zenbook,14,1024,12,24,6.99
+https://i.imgur.com/euggB8q.png,2019,asus,zenbook,14,256,16,25,6.99
+https://i.imgur.com/euggB8q.png,2018,asus,zenbook,14,512,8,26,6.99
+https://i.imgur.com/euggB8q.png,2017,asus,zenbook,14,1024,8,27,7.99
+https://i.imgur.com/euggB8q.png,2022,asus,zenbook,14,256,8,28,8.99
+https://i.imgur.com/euggB8q.png,2021,asus,zenbook,14,256,8,29,9.99
+https://i.imgur.com/euggB8q.png,2020,asus,zenbook,14,256,8,30,10.99
+https://i.imgur.com/euggB8q.png,2019,asus,zenbook,14,512,8,31,6.99
+https://i.imgur.com/euggB8q.png,2018,asus,TUF Dash,15,1024,12,32,7.99
+https://i.imgur.com/euggB8q.png,2017,asus,TUF Dash,15,256,12,33,8.99
+https://i.imgur.com/euggB8q.png,2022,asus,TUF Dash,15,512,12,34,9.99
+https://i.imgur.com/euggB8q.png,2021,asus,TUF Dash,15,256,16,35,10.99
+https://i.imgur.com/euggB8q.png,2020,asus,TUF Dash,15,512,16,36,8.99
+https://i.imgur.com/P1xAhd9.jpg,2022,dell,Inspiron 3000,15,256,16,37,9.99
+https://i.imgur.com/P1xAhd9.jpg,2021,dell,Inspiron 3000,13,512,4,38,10.99
+https://i.imgur.com/P1xAhd9.jpg,2020,dell,Inspiron 3000,15,1024,4,39,8.99
+https://i.imgur.com/P1xAhd9.jpg,2022,dell,Inspiron 3000,13,256,4,40,9.99
+https://i.imgur.com/P1xAhd9.jpg,2021,dell,Inspiron 3000,15,512,4,41,10.99
+https://i.imgur.com/P1xAhd9.jpg,2020,dell,XPS,13,1024,4,42,6.99
+https://i.imgur.com/P1xAhd9.jpg,2022,dell,XPS,13,256,4,43,7.99
+https://i.imgur.com/P1xAhd9.jpg,2021,dell,XPS,13,512,8,44,8.99
+https://i.imgur.com/UkbMDei.jpg,2020,HP,fs15fq,15,1024,12,45,9.99
+https://i.imgur.com/UkbMDei.jpg,2019,HP,fs15fq,15,256,16,46,10.99
+https://i.imgur.com/UkbMDei.jpg,2018,HP,fs15fq,15,512,8,47,6.99
+https://i.imgur.com/UkbMDei.jpg,2017,HP,fs15fq,15,1024,8,48,7.99
+https://i.imgur.com/UkbMDei.jpg,2022,HP,fs15fq,15,256,8,49,6.99
+https://i.imgur.com/UkbMDei.jpg,2021,HP,fs15fq,15,512,8,50,7.99
+https://i.imgur.com/UkbMDei.jpg,2020,HP,fs15fq,15,1024,8,51,6.99
+https://i.imgur.com/UkbMDei.jpg,2019,HP,fs13tk,13,256,8,52,6.99
+https://i.imgur.com/UkbMDei.jpg,2018,HP,fs13tk,13,256,12,53,6.99
+https://i.imgur.com/UkbMDei.jpg,2017,HP,fs13tk,13,256,12,54,7.99
+https://i.imgur.com/UkbMDei.jpg,2022,HP,fs13tk,13,512,12,55,8.99
+https://i.imgur.com/UkbMDei.jpg,2021,HP,fs13tk,13,1024,16,56,9.99
+https://i.imgur.com/UkbMDei.jpg,2020,HP,fs13tk,13,256,16,57,10.99
+https://i.imgur.com/UkbMDei.jpg,2019,HP,fs13tk,13,512,16,58,6.99
+https://i.imgur.com/UkbMDei.jpg,2018,HP,ft11fr,11,256,4,59,7.99
+https://i.imgur.com/UkbMDei.jpg,2017,HP,ft11fr,11,512,4,60,8.99
+https://i.imgur.com/UkbMDei.jpg,2022,HP,ft11fr,11,256,4,61,9.99
+https://i.imgur.com/UkbMDei.jpg,2021,HP,ft11fr,11,512,4,62,10.99
+https://i.imgur.com/UkbMDei.jpg,2020,HP,ft11fr,11,1024,4,63,8.99
+https://i.imgur.com/JAqP42e.png,2022,Alienware,m15R6,15,256,4,64,9.99
+https://i.imgur.com/JAqP42e.png,2021,Alienware,m15R6,15,512,8,65,10.99
+https://i.imgur.com/JAqP42e.png,2020,Alienware,m15R6,15,1024,12,66,8.99
+https://i.imgur.com/JAqP42e.png,2022,Alienware,m15R6,15,256,16,67,9.99
+https://i.imgur.com/JAqP42e.png,2021,Alienware,m15R6,15,512,8,68,10.99
+https://i.imgur.com/JAqP42e.png,2020,Alienware,m13R18,13,1024,8,69,6.99
+https://i.imgur.com/JAqP42e.png,2022,Alienware,m13R18,13,256,8,70,7.99
+https://i.imgur.com/JAqP42e.png,2021,Alienware,m13R18,13,512,8,71,8.99
+https://i.imgur.com/JAqP42e.png,2020,Alienware,m13R18,13,1024,8,72,9.99
+https://i.imgur.com/JAqP42e.png,2019,Alienware,m13R18,13,256,8,73,10.99
+https://i.imgur.com/JAqP42e.png,2018,Alienware,m13R18,13,512,12,74,6.99
+https://i.imgur.com/JAqP42e.png,2017,Alienware,m17R19,17,1024,12,75,7.99
+https://i.imgur.com/JAqP42e.png,2022,Alienware,m17R19,17,256,12,76,6.99
+https://i.imgur.com/JAqP42e.png,2021,Alienware,m17R19,17,256,16,77,7.99
+https://i.imgur.com/JAqP42e.png,2020,Alienware,m17R19,17,256,16,78,6.99
+https://i.imgur.com/JAqP42e.png,2019,Alienware,m17R19,17,512,16,79,6.99
+https://i.imgur.com/JAqP42e.png,2018,Alienware,m17R19,17,1024,4,80,6.99
+https://i.imgur.com/8ZA8eK4.jpg,2017,Samsung,Chromebook4,13,256,4,81,7.99
+https://i.imgur.com/8ZA8eK4.jpg,2022,Samsung,Chromebook4,13,512,4,82,8.99
+https://i.imgur.com/8ZA8eK4.jpg,2021,Samsung,Chromebook4,13,256,4,83,9.99
+https://i.imgur.com/8ZA8eK4.jpg,2020,Samsung,Chromebook4,13,512,4,84,10.99
+https://i.imgur.com/8ZA8eK4.jpg,2019,Samsung,Chromebook4,13,256,4,85,6.99
+https://i.imgur.com/8ZA8eK4.jpg,2018,Samsung,Chromebook2,13,512,8,86,7.99
+https://i.imgur.com/8ZA8eK4.jpg,2017,Samsung,Chromebook3,13,1024,12,87,8.99
+https://i.imgur.com/8ZA8eK4.jpg,2022,Samsung,Chromebook4,13,256,16,88,9.99
+https://i.imgur.com/8ZA8eK4.jpg,2021,Samsung,Chromebook2,13,512,8,89,10.99
+https://i.imgur.com/8ZA8eK4.jpg,2020,Samsung,Chromebook3,13,1024,8,90,8.99
+https://i.imgur.com/8ZA8eK4.jpg,2022,Samsung,Chromebook4,13,256,8,91,9.99
+https://i.imgur.com/vmOT03H.jpg,2021,Huawei,Matebook d15,15,512,8,92,10.99
+https://i.imgur.com/vmOT03H.jpg,2020,Huawei,Matebook d14,13,1024,8,93,8.99
+https://i.imgur.com/vmOT03H.jpg,2022,Huawei,matebook d13,13,512,8,94,9.99
+https://i.imgur.com/vmOT03H.jpg,2021,Huawei,Matebook d13,15,1024,12,95,10.99
+https://i.imgur.com/vmOT03H.jpg,2020,Huawei,matebook d15,15,256,12,96,6.99
+https://i.imgur.com/vmOT03H.jpg,2022,Huawei,Matebook d15,15,512,12,97,7.99
+https://i.imgur.com/vmOT03H.jpg,2021,Huawei,Matebook d14,15,1024,16,98,8.99
+https://i.imgur.com/vmOT03H.jpg,2020,Huawei,matebook d13,13,256,16,99,9.99
+https://i.imgur.com/vmOT03H.jpg,2019,Huawei,Matebook d13,13,1024,16,100,10.99
