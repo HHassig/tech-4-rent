@@ -1,15 +1,15 @@
-<h2>Newest</h2>
-<div class="cards-container">
-<%# This button is going to allow to click on the image and redirect to the laptop.id path %>
-  <% @laptops.each do |laptop| %>
-  <button style="background-color: transparent;" onclick="location.href='<%=laptops_path(laptop.id)%>'" type="button">
-  <div class="laptop-card">
-    <div class="box-container">
-      <div class="box">
-        <p>laptop title</p>
-        <p>price</p>
-      </div>
+<div class="newest">
+  <h2>✨ Newest</h2>
+  <div class="cards-container">
+  <%# This button is going to allow to click on the image and redirect to the laptop.id path %>
+    <% @laptops.each do |laptop| %>
+    <div class="laptop-card">
+      <img class="laptop-image" src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202210/24/00115214805689____8__640x640.jpg" alt="laptop image">
+        <div class="specs">
+          <p class ="laptop-title"><b><%= laptop.title %> | </b></h4>
+          <p class ="laptop-price"><b><%= laptop.price %></b></h4>
+        </div>
     </div>
-  <% end %>
+    <% end %>
   </div>
 </div>
