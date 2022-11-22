@@ -7,6 +7,7 @@ class LaptopsController < ApplicationController
       @search_term = params[:search]
       @laptops = @laptops.search_by(@search_term)
     end
+    # this is oscars code
   end
 
   def new
