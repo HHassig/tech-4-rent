@@ -45,6 +45,4 @@ class LaptopsController < ApplicationController
   def set_list
     @laptops = Laptop.find(params[:laptop_id])
   end
-
-
 end
