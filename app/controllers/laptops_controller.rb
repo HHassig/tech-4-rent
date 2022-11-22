@@ -8,6 +8,7 @@ class LaptopsController < ApplicationController
       @search_term = params[:search]
       @laptops = @laptops.search_by(@search_term)
     end
+<<<<<<< HEAD
   end
 
   def show
@@ -16,6 +17,9 @@ class LaptopsController < ApplicationController
 
   def self.seacrh_by(search_term)
     where("Lower(name) LIKE :search_term", search_term: "%#{search_term.downcase}%")
+=======
+    # this is oscars code
+>>>>>>> master
   end
 
   def new
