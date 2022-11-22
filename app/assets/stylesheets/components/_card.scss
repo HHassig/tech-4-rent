@@ -1,9 +1,47 @@
+.newest {
+  padding: 20px;
+}
+
+.newest h2 {
+  color: #d1e751;
+  margin-block: 20px;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 700;
+}
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.cards-container > button {
-  display: contents;
-  border-right: 1px solid rgb(44, 44, 44);
+.laptop-card {
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  background-color: rgba(155, 155, 155, 0.248);
+  margin-top: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  height: auto;
+}
+
+.laptop-card:hover {
+  box-shadow: 0 0px 10px 0 rgba(0,0,0,0.2);
+  transform: scale(103%);
+}
+
+.laptop-image {
+  max-width: 300px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.laptop-title {
+}
+
+
+
+.specs {
+  padding: 10px;
 }

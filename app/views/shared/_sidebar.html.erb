@@ -1,0 +1,21 @@
+<div id="mySidenav" class="sidebar">
+  <a href="#">Lenovo</a>
+  <a href="#">Asus</a>
+  <a href="#">Apple</a>
+  <a href="#">Blabla</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="toggleNav()">&#9776;</button>
+</div>
+
+<script>
+
+function toggleNav() {
+    var sidenav = document.getElementById("mySidenav"),
+    main = document.getElementById("main");
+    sidenav.style.width = sidenav.style.width === "250px" ? '0' : '250px';
+    main.style.marginLeft = main.style.marginLeft === "250px" ? '0' :  '250px';
+}
+
+</script>
