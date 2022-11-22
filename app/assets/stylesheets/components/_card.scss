@@ -1,10 +1,11 @@
 .newest {
-  padding: 20px;
+  padding-top: 40px;
+  padding-left: 70px;
 }
+
 
 .newest h2 {
   color: #d1e751;
-  margin-block: 20px;
   text-transform: uppercase;
   font-family: 'Roboto Condensed';
   font-style: italic;
@@ -14,10 +15,11 @@
 .cards-container {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .laptop-card {
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
   margin-top: 20px;
   margin-left: 20px;
@@ -34,13 +36,34 @@
   width: 300px;
 }
 
-.laptop-title {
+.laptop-text h5 {
+  font-size: 15px;
 }
 
+.laptop-text p {
+  font-size: 20px;
+  text-align: right;
+}
 
+.btn-rent {
+  align-self: flex-end;
+  background-color: #d1e751;
+  color: white;
+  border-radius: 8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-inline: 10px;
+}
+
+.btn-rent:hover {
+  color: black;
+  text-size-adjust: 0;
+}
 
 .specs {
   padding: 10px;
   color: white;
   background-color: black;
+  display: flex;
+  flex-direction: column;
 }
