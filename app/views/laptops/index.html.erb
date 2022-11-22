@@ -1,0 +1,15 @@
+<h2>Newest</h2>
+<div class="cards-container">
+<%# This button is going to allow to click on the image and redirect to the laptop.id path %>
+  <% @laptops.each do |laptop| %>
+  <button style="background-color: transparent;" onclick="location.href='<%=laptops_path(laptop.id)%>'" type="button">
+  <div class="laptop-card">
+    <div class="box-container">
+      <div class="box">
+        <p>laptop title</p>
+        <p>price</p>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
