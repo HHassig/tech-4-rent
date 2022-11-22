@@ -22,9 +22,9 @@
           <li class="nav-item dropdown">
             <%= image_tag "https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Log in", "#", class: "dropdown-item" %>
-              <%= link_to "Sign up", "#", class: "dropdown-item" %>
-              <%= link_to "Help", "#", class: "dropdown-item" %>
+              <%= link_to "Log in", new_user_session_path, class: "dropdown-item" %>
+              <%= link_to "Sign up", new_user_registration_path , class: "dropdown-item" %>
+              <%= link_to "About", about_path, class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete},
   class: "dropdown-item" %>
             </div>
