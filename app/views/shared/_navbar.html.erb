@@ -2,6 +2,7 @@
   <div class="container-fluid">
     <%= link_to "/", class: "navbar-brand" do %>
       <img src="https://i.imgur.com/Zjp3vCb.png" alt="logo">
+      <h1>TECH4RENT</h1>
     <% end %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +18,7 @@
         </li>
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "New Item", "#", class: "nav-link" %>
+            <%= link_to "New Laptop", "#", class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
             <%= image_tag "https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
