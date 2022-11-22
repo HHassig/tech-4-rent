@@ -3,10 +3,15 @@ class LaptopsController < ApplicationController
   before_action :set_list, only: [:new, :create]
 
   def index
+    @laptops = Laptop.all
     if params[:search]
       @search_term = params[:search]
       @laptops = @laptops.search_by(@search_term)
     end
+  end
+
+  def show
+    @laptop = Laptop.find(params[:id])
   end
 
   def self.seacrh_by(search_term)
@@ -20,7 +25,7 @@ class LaptopsController < ApplicationController
   def create
     @laptop = Laptop.new(laptop_params)
     @laptop.list = @laptops
-    if laptop.save
+    if @laptop.save
       redirect_to laptop_path(@laptops)
     else
       render :new
