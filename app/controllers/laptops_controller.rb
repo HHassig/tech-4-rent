@@ -40,7 +40,7 @@ class LaptopsController < ApplicationController
   private
 
   def laptop_params
-    params.require(:laptop).permit(:title, :price, :user)
+    params.require(:laptop).permit(:user_id, :title, :price)
   end
 
   def set_laptop
