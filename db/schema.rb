@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_21_152033) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_22_140130) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_21_152033) do
     t.integer "duration"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "price"
     t.index ["laptop_id"], name: "index_bookings_on_laptop_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
@@ -30,6 +31,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_21_152033) do
     t.float "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "brand"
+    t.string "model"
+    t.float "screen_size"
+    t.integer "hard_drive"
+    t.integer "ram"
+    t.integer "year_built"
     t.index ["user_id"], name: "index_laptops_on_user_id"
   end
 
@@ -41,6 +48,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_21_152033) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "username"
+    t.string "user_type"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
