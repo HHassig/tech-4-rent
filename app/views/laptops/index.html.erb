@@ -1,14 +1,14 @@
 <div class="newest">
-  <h2 class="underlined"> Newest</h2>
+  <h2>Newest</h2>
   <div class="cards-container">
-    <% @laptops.each do |laptop| %>
+    <% @laptops.first(5).each do |laptop| %>
     <div class="laptop-card">
       <img class="laptop-image" src="<%= laptop.photo.key %>" alt="laptop image">
         <div class="specs">
-          <p class ="laptop-title"><b><%= laptop.brand %> | <%= laptop.model %></b></p>
-          <p class ="laptop-price"><b><%= "€#{laptop.price}/hour" %></b></p>
-          <%# <button class="btn-rent">Rent</button> %>
-          <%= link_to "Rent", new_laptop_booking_path(laptop), class: "btn-rent" %>
+          <p class ="laptop-title"><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %></p>
+          <p class ="laptop-title"> HDD/SSD: <%= laptop.hard_drive %>, Ram: <%= laptop.ram %>, <%= laptop.screen_size%>"</p>
+          <p class ="laptop-price"><%= "€#{laptop.price}/hour" %></p>
+          <a href=<%=new_laptop_booking_path(laptop)%> class="btn-rent"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
       </div>
     <% end %>
@@ -16,16 +16,16 @@
 </div>
 
 <div class="newest">
-  <h2> Most rated </h2>
+  <h2>Most rated</h2>
   <div class="cards-container">
-    <%# This button is going to allow to click on the image and redirect to the laptop.id path %>
-    <% @laptops.each do |laptop| %>
-      <div class="laptop-card">
-        <%= cl_image_tag(laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
+    <% @laptops.first(5).each do |laptop| %>
+    <div class="laptop-card">
+      <img class="laptop-image" src="<%= laptop.photo.key %>" alt="laptop image">
         <div class="specs">
-          <p class ="laptop-title"><b><%= laptop.brand %> | <%= laptop.model %></b></p>
-          <p class ="laptop-price"><b><%= "€#{laptop.price}/hour" %></b></p>
-          <button class="btn-rent">Rent</button>
+          <p class ="laptop-title"><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %></p>
+          <p class ="laptop-title"> HDD/SSD: <%= laptop.hard_drive %>, Ram: <%= laptop.ram %>, <%= laptop.screen_size%>"</p>
+          <p class ="laptop-price"><%= "€#{laptop.price}/hour" %></p>
+          <a href=<%=new_laptop_booking_path(laptop)%> class="btn-rent"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
       </div>
     <% end %>
