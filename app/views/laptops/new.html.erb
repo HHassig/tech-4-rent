@@ -1,1 +1,17 @@
-<h1>THIS IS A NEW LAPTOP PAGE</h1>
+<div class="newest">
+  <h2> Post a new laptop </h2>
+  <form>
+    <div class="form-group" style="width: 500px" >
+      <%= simple_form_for @laptop do |f| %>
+        <%= f.input :brand, placeholder: 'Apple' %>
+        <%= f.input :model, placeholder: 'Air' %>
+        <%= f.input :screen_size, placeholder: '11.1' %>
+        <%= f.input :hard_drive, placeholder: '1024' %>
+        <%= f.input :ram, placeholder: '16' %>
+        <%= f.input :year_built, placeholder: '2023' %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit class:"btn-rent" %>
+      <% end %>
+    </div>
+  </form>
+</div>
