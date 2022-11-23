@@ -1,0 +1,26 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.imgur.com/K7HOOMA.png);">
+  <div class="container">
+    <h1>Tech 4 Hire</h1>
+    <p><strong>Rent</strong> your spare laptop for extra cash.</p>
+    <p><strong>Borrow</strong> a laptop on your terms.</p>
+    <%= link_to "Get Started", new_user_session_path, class: "btn-rent" %>
+  </div>
+</div>
+<div class="newest">
+  <h2 class="underlined"> Newest</h2>
+  <div class="cards-container">
+    <%# This button is going to allow to click on the image and redirect to the laptop.id path %>
+    <% @laptops = @laptops[0..3] %>
+    <% @laptops.each do |laptop| %>
+      <div class="laptop-card">
+        <%= cl_image_tag(laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
+        <div class="specs">
+          <p class ="laptop-title"><b><%= laptop.brand %> | <%= laptop.model %></b></p>
+          <p class ="laptop-price"><b><%= "€#{laptop.price}/hour" %></b></p>
+          <%# <button class="btn-rent">Rent</button> %>
+          <%= link_to "Rent", new_laptop_booking_path(laptop), class: "btn-rent" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
