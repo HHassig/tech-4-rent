@@ -18,7 +18,7 @@
         </li>
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "New Laptop", "#", class: "nav-link" %>
+            <%= link_to "New Laptop",new_laptop_path, class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
             <%= image_tag "https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
