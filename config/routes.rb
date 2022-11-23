@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "laptops#index"
+  root to: "statics#home"
   get "about", to: "statics#about"
   get "home", to: "statics#home"
 
