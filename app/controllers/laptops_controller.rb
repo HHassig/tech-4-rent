@@ -1,7 +1,6 @@
 class LaptopsController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
-  before_action :set_laptop, only: :destroy
-  before_action :set_list, only: %i[new create]
+  before_action :set_laptop, only: %i[destroy]
 
   def index
     @laptops = Laptop.all
@@ -37,14 +36,10 @@ class LaptopsController < ApplicationController
   private
 
   def laptop_params
-    params.require(:laptop).permit(:title, :price, :user, :photo)
+    params.require(:year_built, :brand, :model, :screen_size, :hard_drive, :ram, :user, :price).permit(:photo)
   end
 
   def set_laptop
-    @laptop = Laptop.find(params[:id])
-  end
-
-  def set_list
-    @laptops = Laptop.find(params[:laptop_id])
+    @laptop = Laptop.find(params[:laptop_id])
   end
 end
