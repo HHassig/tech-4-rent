@@ -1,9 +1,9 @@
-.newest {
+.laptop-title {
   padding-top: 40px;
   padding-left: 70px;
 }
 
-.newest h2 {
+.laptop-title h2 {
   color: #d1e751;
   text-transform: uppercase;
   font-family: 'Roboto Condensed';
@@ -33,15 +33,7 @@
 
 .laptop-image {
   width: 300px;
-}
-
-.laptop-text h5 {
-  font-size: 15px;
-}
-
-.laptop-text p {
-  font-size: 20px;
-  text-align: right;
+  max-height: 200px;
 }
 
 .btn-rent {
@@ -66,4 +58,20 @@
   background-color: black;
   display: flex;
   flex-direction: column;
+}
+
+.specs h4 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+
+.specs p {
+  font-size: 12px;
+}
+
+
+.specs h5 {
+  font-size: 17px;
+  text-align: right;
 }

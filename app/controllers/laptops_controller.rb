@@ -1,7 +1,6 @@
 class LaptopsController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
-  before_action :set_laptop, only: :destroy
-  before_action :set_list, only: %i[new create]
+  before_action :set_laptop, only: %i[destroy]
 
   def index
     @laptops = Laptop.all
@@ -21,9 +20,8 @@ class LaptopsController < ApplicationController
 
   def create
     @laptop = Laptop.new(laptop_params)
-    @laptop.list = @laptops
     if @laptop.save
-      redirect_to laptop_path(@laptops)
+      redirect_to laptop_path(@laptops), notice: 'List was successfully created.'
     else
       render :new
     end
@@ -37,14 +35,10 @@ class LaptopsController < ApplicationController
   private
 
   def laptop_params
-    params.require(:laptop).permit(:title, :price, :user, :photo)
+    params.require(:year_built, :brand, :model, :screen_size, :hard_drive, :ram, :user, :price, :photo)
   end
 
   def set_laptop
-    @laptop = Laptop.find(params[:id])
-  end
-
-  def set_list
-    @laptops = Laptop.find(params[:laptop_id])
+    @laptop = Laptop.find(params[:laptop_id])
   end
 end
