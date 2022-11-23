@@ -17,9 +17,11 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    @bookmark.laptop = @laptop
+    @booking.laptop = @laptop
+    @booking.user = current_user
+    raise
     @booking.save
-    (params[:duration] * laptop.price)
+    (params[:duration] * @laptop.price)
     redirect_to laptop_booking_path(@laptop)
   end
 

@@ -1,8 +1,7 @@
 <div class="laptop-title">
   <h2> Post a new laptop </h2>
-  <form>
     <div class="form-group" style="width: 500px" >
-      <%= simple_form_for @laptop do |f| %>
+      <%= simple_form_for @laptop, data:{turbo: false} do |f| %>
         <%= f.input :brand, placeholder: 'Apple' %>
         <%= f.input :model, placeholder: 'Air' %>
         <%= f.input :screen_size, placeholder: '11.1' %>
@@ -13,5 +12,4 @@
         <%= f.submit class:"btn-rent" %>
       <% end %>
     </div>
-  </form>
 </div>
