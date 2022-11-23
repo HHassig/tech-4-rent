@@ -4,13 +4,14 @@
     <p><strong>Rent</strong> your spare laptop for extra cash.</p>
     <p><strong>Borrow</strong> a laptop on your terms.</p>
     <%= link_to "Get Started", new_user_session_path, class: "btn-rent" %>
+    <%= link_to "See offers", laptops_path, class: "btn-rent" %>
   </div>
 </div>
 <div class="newest">
   <h2 class="underlined"> Newest</h2>
   <div class="cards-container">
     <%# This button is going to allow to click on the image and redirect to the laptop.id path %>
-    <% @laptops = @laptops[0..3] %>
+    <% @laptops = @laptops[0..4] %>
     <% @laptops.each do |laptop| %>
       <div class="laptop-card">
         <%= cl_image_tag(laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
