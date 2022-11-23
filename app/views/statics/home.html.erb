@@ -19,7 +19,7 @@
           <p class ="laptop-title"><b><%= laptop.brand %> | <%= laptop.model %></b></p>
           <p class ="laptop-price"><b><%= "€#{laptop.price}/hour" %></b></p>
           <%# <button class="btn-rent">Rent</button> %>
-          <%= link_to "Rent", new_laptop_booking_path(laptop), class: "btn-rent" %>
+          <a href=<%=new_laptop_booking_path(laptop)%> class="btn-rent"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
       </div>
     <% end %>
