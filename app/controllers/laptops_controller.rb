@@ -20,9 +20,8 @@ class LaptopsController < ApplicationController
 
   def create
     @laptop = Laptop.new(laptop_params)
-    @laptop.list = @laptops
     if @laptop.save
-      redirect_to laptop_path(@laptops)
+      redirect_to laptop_path(@laptops), notice: 'List was successfully created.'
     else
       render :new
     end
@@ -36,7 +35,7 @@ class LaptopsController < ApplicationController
   private
 
   def laptop_params
-    params.require(:year_built, :brand, :model, :screen_size, :hard_drive, :ram, :user, :price).permit(:photo)
+    params.require(:year_built, :brand, :model, :screen_size, :hard_drive, :ram, :user, :price, :photo)
   end
 
   def set_laptop
