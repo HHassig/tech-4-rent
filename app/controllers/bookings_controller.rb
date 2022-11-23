@@ -2,11 +2,16 @@ class BookingsController < ApplicationController
   before_action :set_booking, only: :destroy
   before_action :set_laptop, only: %i[new create]
 
-  def show
+  def index
     @bookings = Booking.all
   end
 
+  def show
+    @booking = Booking.find(params[:id])
+  end
+
   def new
+    @laptops = Laptop.all
     @booking = Booking.new
   end
 
