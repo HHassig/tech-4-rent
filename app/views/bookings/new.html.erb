@@ -1,1 +1,43 @@
-<h1>HELLO SERGI</h1>
+<div class="booking">
+
+  <div id="left-side" style="width: 60%;">
+    <div class="laptop-title">
+      <h2><%= @laptop.brand %> <%= @laptop.model %> | <%= @laptop.year_built %></h2>
+      <div class="product-specs">
+        <img class="booking-image" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-macbook-air-gold-202002?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1610746650000" alt="laptop image">
+        <h3>Specs</h3>
+        <ul>
+          <li>Hard Disk: <%= @laptop.hard_drive %></li>
+          <li>Ram: <%= @laptop.ram %></li>
+          <li>Screen size: <%= @laptop.screen_size %>"</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="right-side" style="flex-grow: 1;">
+      <div class="laptop-title">
+      <h2>checkout heh</h2>
+    <%# Checkout here %>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="laptop-title">
+  <h2>Similar products</h2>
+  <div class="cards-container">
+    <% @laptops.first(5).each do |laptop| %>
+    <div class="laptop-card">
+      <img class="laptop-image" src="<%= laptop.photo.key %>" alt="laptop image">
+        <div class="specs">
+          <h4><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %></h4>
+          <p class ="laptop-text"> HDD/SSD: <%= laptop.hard_drive %>, Ram: <%= laptop.ram %>, <%= laptop.screen_size%>"</p>
+          <h5 class ="laptop-text">€<%= laptop.price %>/hour </h5>
+          <a href=<%=new_laptop_booking_path(laptop)%> class="btn-rent"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
