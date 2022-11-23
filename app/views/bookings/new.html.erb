@@ -4,7 +4,7 @@
     <div class="laptop-title">
       <h2><%= @laptop.brand %> <%= @laptop.model %> | <%= @laptop.year_built %></h2>
       <div class="product-specs">
-        <img class="booking-image" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-macbook-air-gold-202002?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1610746650000" alt="laptop image">
+        <img class="booking-image" src=<%= @laptop.photo.key %> alt="laptop image">
         <h3>Specs</h3>
         <ul>
           <li>Hard Disk: <%= @laptop.hard_drive %></li>
