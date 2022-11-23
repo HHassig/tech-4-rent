@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get "home", to: "statics#home"
 
   resources :laptops do
-    resources :bookings, only: %i[destroy new create index]
+    resources :bookings, only: %i[show destroy new create index]
   end
   resources :bookings, only: %i[show edit update new create destroy]
 end

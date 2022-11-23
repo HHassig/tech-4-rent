@@ -17,12 +17,10 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    @booking.laptop = @laptop
-    if @booking.save
-      redirect_to bookings_path
-    else
-      render :new, status: :unprocessable_entity
-    end
+    @bookmark.laptop = @laptop
+    @booking.save
+    (params[:duration] * laptop.price)
+    redirect_to laptop_booking_path(@laptop)
   end
 
   def destroy
