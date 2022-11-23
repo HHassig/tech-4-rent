@@ -11,8 +11,7 @@
   <h2>Newest</h2>
   <div class="cards-container">
     <%# This button is going to allow to click on the image and redirect to the laptop.id path %>
-    <% @laptops = @laptops[0..3] %>
-    <% @laptops.each do |laptop| %>
+    <% @laptops.first(4).each do |laptop| %>
       <div class="laptop-card">
         <%= cl_image_tag(laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
         <div class="specs">
