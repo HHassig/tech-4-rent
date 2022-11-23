@@ -1,22 +1,18 @@
 class LaptopsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: %i[index show]
   before_action :set_laptop, only: :destroy
-  before_action :set_list, only: [:new, :create]
+  before_action :set_list, only: %i[new create]
 
   def index
     @laptops = Laptop.all
     if params[:search]
       @search_term = params[:search]
-      @laptops = @laptops.search_by(@search_term)
+      @laptops = @laptops.where("brand LIKE ?", "#{@search_term}")
     end
   end
 
   def show
     @laptop = Laptop.find(params[:id])
-  end
-
-  def self.seacrh_by(search_term)
-    where("Lower(name) LIKE :search_term", search_term: "%#{search_term.downcase}%")
   end
 
   def new
