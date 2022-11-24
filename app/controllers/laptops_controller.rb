@@ -3,7 +3,12 @@ class LaptopsController < ApplicationController
   before_action :set_laptop, only: %i[destroy]
 
   def index
-    @laptops = Laptop.all.paginate(page: params[:page], per_page: 12)
+    @laptops = Laptop.all
+    @laptops.each do |laptop|
+      laptop.average_rating = all_reviews(laptop)
+      laptop.save
+    end
+    @laptops = @laptops.paginate(:page => params[:page], :per_page => 12)
     if params[:search].present?
       @search_term = params[:search]
       @laptops = @laptops.where("brand ILIKE ?", "%#{@search_term}%")
@@ -48,6 +53,8 @@ class LaptopsController < ApplicationController
     redirect_to laptops_path
   end
 
+
+
   private
 
   def laptop_params
@@ -59,11 +66,11 @@ class LaptopsController < ApplicationController
   end
 
   def all_reviews(laptop)
-    reviews = Review.where(:laptop_id => laptop.id.to_i)
+    reviews = Review.where(laptop: laptop)
     sum = 0
     reviews.each do |review_object|
       sum += review_object.review
     end
-    return sum.to_f/reviews.count
+    return sum.to_f / reviews.count.round(1)
   end
 end
