@@ -1,0 +1,37 @@
+.banner-home {
+  background-size: cover;
+  background-position-y: 70%;
+  height: 350px;
+  display: flex;
+}
+
+.banner-home p {
+  font-size: 20px;
+  color: #c1beba;
+  font-family: "Nunito", "sans-serif";
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 10%;
+  margin-left: auto;
+}
+
+.btn-down {
+  display: flex;
+  width: fit-content;
+  text-transform: uppercase;
+  background-color: #d1e751;
+  color: white;
+  margin-left: auto;
+  border-bottom-left-radius: 8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-inline: 10px;
+  text-decoration: none;
+  align-items: center;
+  font-family: 'roboto condensed';
+  font-weight: 600;
+}
+
+.btn-down:hover {
+  text-decoration: none;
+  color: black;
+}

@@ -1,11 +1,14 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.imgur.com/K7HOOMA.png);">
-  <div class="container">
-    <h1>Tech 4 Rent</h1>
-    <p><strong>Rent</strong> your spare laptop for extra cash.</p>
-    <p><strong>Borrow</strong> a laptop on your terms.</p>
-    <%= link_to "Get Started", new_user_session_path, class: "btn-rent" %>
-    <%= link_to "See offers", laptops_path, class: "btn-rent" %>
-  </div>
+<div class="banner-all">
+  <div class="banner-home" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.imgur.com/K7HOOMA.png);">
+      <%# <h1>Tech4Rent</h1> %>
+      <p>
+        <strong>Rent</strong> your spare laptop for extra cash. <br>
+        <strong>Borrow</strong> a laptop on your terms.
+      </p>
+    </div>
+      <a href=<%=laptops_path%> class="btn-down"><i class="fa-solid fa-laptop"></i> See all</a>
+</div>
+
 </div>
 <div class="laptop-title">
   <h2>Newest</h2>
@@ -13,12 +16,13 @@
     <%# This button is going to allow to click on the image and redirect to the laptop.id path %>
     <% @laptops.first(4).each do |laptop| %>
       <div class="laptop-card">
+        <a href=<%=laptop_path(laptop)%>>
         <%= cl_image_tag(laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
         <div class="specs">
           <h4><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %></h4>
           <p class ="laptop-text"> HDD/SSD: <%= laptop.hard_drive %>, RAM: <%= laptop.ram %>, <%= laptop.screen_size %>"</p>
-          <h5 class ="laptop-text"><%= "€#{laptop.price}/hour" %></h5>
-          <a href=<%=new_laptop_booking_path(laptop)%> class="btn-rent"><i class="fa-solid fa-cart-shopping"></i></a>
+          <h5 class ="laptop-text">€<%= laptop.price %>/hour</h5>
+          </a>
         </div>
       </div>
     <% end %>
@@ -29,12 +33,13 @@
   <div class="cards-container">
     <% @laptops[5..8].each do |laptop| %>
     <div class="laptop-card">
+      <a href=<%=laptop_path(laptop)%>>
       <%= cl_image_tag(laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
         <div class="specs">
           <h4><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %></h4>
           <p class ="laptop-text"> HDD/SSD: <%= laptop.hard_drive %>, RAM: <%= laptop.ram %>, <%= laptop.screen_size %>"</p>
-          <h5 class ="laptop-text"><%= "€#{laptop.price}/hour" %></h5>
-          <a href=<%=new_laptop_booking_path(laptop)%> class="btn-rent"><i class="fa-solid fa-cart-shopping"></i></a>
+          <h5 class ="laptop-text">€<%= laptop.price %>/hour</h5>
+          </a>
         </div>
       </div>
     <% end %>

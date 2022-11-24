@@ -1,20 +1,55 @@
-<h2><%= @laptop.model %></h2>
-<div id="left-side" style="width: 60%;">
-  <div class="laptop-card">
+<div class="booking">
+
+  <div id="left-side" style="width: 60%;">
+    <div class="laptop-title">
       <h2><%= @laptop.brand %> <%= @laptop.model %> | <%= @laptop.year_built %></h2>
-      <div class="specs">
+      <div class="product-specs">
         <%= cl_image_tag(@laptop.photo.key, :class=>"booking-image", :alt=>"laptop image", :width=>350, :height=>250) %>
         <h3>Specs</h3>
         <ul>
-          <li><strong>Hard Disk:</strong> <%= @laptop.hard_drive %></li>
-          <li><strong>Ram</strong>: <%= @laptop.ram %></li>
-          <li><strong>Screen Size:</strong> <%= @laptop.screen_size %>"</li>
-          <li><strong>Price per Hour:</strong> €<%= @laptop.price %></li>
+          <li>Hard Disk: <%= @laptop.hard_drive %></li>
+          <li>Ram: <%= @laptop.ram %></li>
+          <li>Screen size: <%= @laptop.screen_size %>"</li>
         </ul>
-        <a href=<%=new_laptop_booking_path(@laptop)%> class="btn-rent"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
   </div>
+
+  <div id="right-side">
+    <div class="laptop-title">
+      <h2>checkout</h2>
+      <div class="form-styled" >
+        <%= simple_form_for @booking do |f| %>
+        <p>Select how many days you want to rent it</p>
+          <%= f.select(:duration, options_for_select(1..30))%>
+      </div>
+          <%= f.submit class:"btn-rent", value:"Book" %>
+        <% end %>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="laptop-title">
+  <h2>Similar products</h2>
+  <div class="cards-container">
+    <% @laptops[5..8].each do |laptop| %>
+    <div class="laptop-card">
+      <a href=<%=laptop_path(laptop)%>>
+      <%= cl_image_tag(laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
+        <div class="specs">
+          <h4><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %></h4>
+          <p class ="laptop-text"> HDD/SSD: <%= laptop.hard_drive %>, Ram: <%= laptop.ram %>, <%= laptop.screen_size%>"</p>
+          <h5 class ="laptop-text">€<%= laptop.price %>/hour </h5>
+          </a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
 
 <div id="right-side">
   <div style="width: 100%; height: 600px;"

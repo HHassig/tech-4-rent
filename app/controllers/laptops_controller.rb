@@ -13,6 +13,8 @@ class LaptopsController < ApplicationController
   def show
     @laptop = Laptop.find(params[:id])
     @markers = [{ lat: @laptop.latitude, lng: @laptop.longitude }]
+    @booking = Booking.new
+    @laptops = Laptop.all
   end
 
   def new
