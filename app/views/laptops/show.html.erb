@@ -2,7 +2,7 @@
 
   <div id="left-side" style="width: 60%;">
     <div class="laptop-title">
-      <h2><%= @laptop.brand %> <%= @laptop.model %> | <%= @laptop.year_built %></h2>
+      <h2><%= @laptop.brand %> <%= @laptop.model %> | <%= @laptop.year_built %> | <%= @review %></h2>
       <div class="product-specs">
         <%= cl_image_tag(@laptop.photo.key, :class=>"booking-image", :alt=>"laptop image", :width=>350, :height=>250) %>
         <h3>Specs</h3>
