@@ -1,5 +1,9 @@
 import { Controller } from "@hotwired/stimulus"
+// import * as mapboxgl from 'mapbox-gl';
+// (mapboxgl as any).accessToken = mapboxAccessToken;
+// import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
 
+// Connects to data-controller="mapbox"
 export default class extends Controller {
   static values = {
     apiKey: String,
@@ -13,8 +17,9 @@ export default class extends Controller {
       container: this.element,
       style: "mapbox://styles/mapbox/streets-v10"
     })
-
     this.#addMarkersToMap()
+    this.#fitMapToMarkers()
+
   }
 
   #addMarkersToMap() {
@@ -23,5 +28,11 @@ export default class extends Controller {
         .setLngLat([ marker.lng, marker.lat ])
         .addTo(this.map)
     })
+  }
+
+  #fitMapToMarkers() {
+    const bounds = new mapboxgl.LngLatBounds()
+    this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
+    this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
 }
