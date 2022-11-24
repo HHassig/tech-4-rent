@@ -12,7 +12,7 @@ class LaptopsController < ApplicationController
 
   def show
     @laptop = Laptop.find(params[:id])
-    @markers = { lat: @laptop.latitude, lng: @laptop.longitude }
+    @markers = [{ lat: @laptop.latitude, lng: @laptop.longitude }]
   end
 
   def new
