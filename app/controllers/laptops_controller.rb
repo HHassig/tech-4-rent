@@ -29,6 +29,17 @@ class LaptopsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @laptop.update(laptop_params)
+      redirect_to laptops_path(@laptop)
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
   def destroy
     @laptop.destroy
     redirect_to laptops_path
