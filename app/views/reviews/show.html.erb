@@ -1,0 +1,8 @@
+<div>
+  <%= simple_form_for [@laptop, @review] do |f| %>
+    <%= f.input :rating, collection: 0..5 %>
+    <%= f.input :content%>
+    <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+  <%= link_to "See all Laptops", laptops_path %>
+</div>
