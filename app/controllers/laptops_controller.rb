@@ -6,7 +6,7 @@ class LaptopsController < ApplicationController
     @laptops = Laptop.all.paginate(:page => params[:page], :per_page => 12)
     if params[:search]
       @search_term = params[:search]
-      @laptops = @laptops.where("brand LIKE ?", "#{@search_term}")
+      @laptops = @laptops.where("brand ILIKE ?", "#{@search_term}")
     end
   end
 
@@ -22,10 +22,10 @@ class LaptopsController < ApplicationController
   def create
     @laptop = Laptop.new(laptop_params)
     @laptop.user = current_user
-    if @laptop.save!
+    if @laptop.save
       redirect_to laptop_path(@laptop), notice: 'Laptop was successfully created.'
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -48,7 +48,7 @@ class LaptopsController < ApplicationController
   private
 
   def laptop_params
-    params.permit(:year_built, :brand, :model, :screen_size, :hard_drive, :ram, :user, :price, :photo, :address)
+    params.require(:laptop).permit(:brand, :year_built, :model, :screen_size, :hard_drive, :ram, :user, :price, :photo, :address)
   end
 
   def set_laptop
