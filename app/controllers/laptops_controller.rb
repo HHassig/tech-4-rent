@@ -28,15 +28,26 @@ class LaptopsController < ApplicationController
     end
   end
 
-  def detroy
+  def edit
+  end
+
+  def update
+    if @laptop.update(laptop_params)
+      redirect_to laptops_path(@laptop)
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
     @laptop.destroy
-    redirect_to laptop_path
+    redirect_to laptops_path
   end
 
   private
 
   def laptop_params
-    params.permit(:year_built, :brand, :model, :screen_size, :hard_drive, :ram, :user, :price, :photo)
+    params.permit(:year_built, :brand, :model, :screen_size, :hard_drive, :ram, :user, :price, :photo, :address)
   end
 
   def set_laptop
