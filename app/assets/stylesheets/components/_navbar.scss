@@ -20,3 +20,25 @@
   display: inline;
   font-size: 25px;
 }
+
+.patatas {
+  display: flex;
+  justify-content: center;
+}
+
+.patatas input {
+  float: center;
+  border: 2px solid #d1e751;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.patatas input:focus {
+  outline: none;
+}
+
+.patatas a {
+  background-color: #d1e751;
+}

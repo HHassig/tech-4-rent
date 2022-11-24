@@ -8,14 +8,13 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
+      <div class="patatas">
+        <%= form_for "", url: laptops_path, role: "search", method: :get do%>
+          <%= text_field_tag :search, @search_term, class:"input-search", placeholder: "Search.." %>
+        <% end %>
+      </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <li>
-          <%= form_for "", url: laptops_path, role: "search", method: :get do %>
-            <%= text_field_tag :search, @search_term, placeholder: "Search.." %>
-          <% end %>
-        </li>
         <% if user_signed_in? %>
           <li class="nav-item active">
             <%= link_to "New Laptop", new_laptop_path(@user), class: "nav-link" %>
