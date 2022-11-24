@@ -38,3 +38,13 @@ csv.each do |row|
   booking.save!
   puts "saved"
 end
+
+csv_text = File.read(Rails.root.join('lib','seeds','reviews.csv'))
+csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
+
+csv.each do |row|
+  review = Review.new({ user_id: row["user_id"], laptop_id: row["laptop"].to_i, review: row["review"].to_i })
+  puts "review.new done"
+  review.save!
+  puts "saved"
+end

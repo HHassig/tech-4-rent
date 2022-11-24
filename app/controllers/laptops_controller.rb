@@ -13,6 +13,7 @@ class LaptopsController < ApplicationController
   def show
     @laptop = Laptop.find(params[:id])
     @markers = [{ lat: @laptop.latitude, lng: @laptop.longitude }]
+    @review = all_reviews(@laptop)
   end
 
   def new
@@ -53,5 +54,14 @@ class LaptopsController < ApplicationController
 
   def set_laptop
     @laptop = Laptop.find(params[:laptop_id])
+  end
+
+  def all_reviews(laptop)
+    reviews = Review.where(:laptop_id => laptop.id.to_i)
+    sum = 0
+    reviews.each do |review_object|
+      sum += review_object.review
+    end
+    return sum.to_f/reviews.count
   end
 end
