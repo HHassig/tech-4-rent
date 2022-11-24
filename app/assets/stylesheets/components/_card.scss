@@ -3,6 +3,11 @@
   padding-left: 70px;
 }
 
+.laptop-title a {
+  text-decoration: none;
+  color: white;
+}
+
 .laptop-title h2 {
   color: #d1e751;
   text-transform: uppercase;
@@ -16,6 +21,7 @@
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
+
 
 .laptop-card {
   border-radius: 10px;
@@ -37,19 +43,23 @@
 }
 
 .btn-rent {
+  text-transform: uppercase;
   align-self: flex-end;
   background-color: #d1e751;
   color: white;
   margin: 7px;
+  border: 0px;
   border-radius: 8px;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-inline: 10px;
+  text-decoration: none;
 }
 
 .btn-rent:hover {
   color: black;
   text-size-adjust: 0;
+  text-decoration: none;
 }
 
 .specs {

@@ -1,17 +1,17 @@
-.footer {
-  left: 0;
+.footer-page {
+  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: rgba(94, 91, 91, 0.9);
   color: white;
 }
 
-.footer a {
+.footer-page a {
   margin-left: 2%;
   text-decoration: none;
   color: white;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.footer-page a:hover {
+  color: #d1e751;
 }
