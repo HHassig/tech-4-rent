@@ -1,101 +1,101 @@
-brand,model,photo,hard_drive,ram,user,price,year_built,screen_size
-Lenovo,IdeaPad,https://i.imgur.com/y9WWis4.png,256,4,1,4.41,2018,14
-HP,Spectre,https://i.imgur.com/zQudqJj.jpg,256,8,2,2.36,2014,13
-Dell,XPS,https://i.imgur.com/6Vn0rlY.jpg,512,4,3,1.35,2019,15
-Apple,Macbook Air,https://i.imgur.com/WXaSaKE.jpg,1024,8,4,8.02,2011,11.1
-Apple,Macbook Pro,https://i.imgur.com/CxMTWrj.jpg,1024,12,5,8.94,2022,13.1
-Asus,Zenbook,https://i.imgur.com/JZGLX8f.jpg,256,16,6,6.89,2021,14
-Alienware,X15,https://i.imgur.com/7ctFyMk.jpg,512,4,7,5.50,2017,14
-Huawei,Matebook,https://i.imgur.com/RG5MHsB.jpg,1024,16,8,5.34,2021,13
-LG,Xnote,https://i.imgur.com/UmMWBl7.jpg,512,12,9,2.66,2020,15
-Microsoft,Surface,https://i.imgur.com/ZhsdL2r.jpg,1024,4,10,5.72,2012,14
-Samsung,Galaxy Book,https://i.imgur.com/qfTVEIl.png,256,8,11,7.55,2017,13
-Acer,Aspire,https://i.imgur.com/C1EStWH.png,256,12,12,3.00,2016,15
-Acer,Enduro,https://i.imgur.com/bh5ARt8.jpg,512,4,13,7.55,2012,11.1
-Acer,Spin,https://i.imgur.com/740JpFY.jpg,1024,8,14,4.25,2015,13.1
-LG,Gram,https://i.imgur.com/nXfGB0b.jpg,1024,4,17,1.70,2020,15
-Alienware,X16,https://technave.com/data/files/article/202201100411578916.jpg,256,16,16,9.79,2017,11.1
-Alienware,Area 51,https://www.notebookcheck.org/uploads/tx_nbc2/AlienwareArea-51mR2__1__01.JPG,512,12,17,8.62,2010,13.1
-Asus,Aspire,https://i.pcmag.com/imagery/reviews/03ksCEsV4CzjGslZopS0M0X-1.fit_scale.size_1028x578.v1639343189.jpg,1024,4,18,1.52,2010,16
-Asus,Vivobook,https://m.media-amazon.com/images/I/81TvoxUJCaL._AC_SY450_.jpg,512,8,19,7.74,2013,16
-Lenovo,Thinkpad,https://www.notebookcheck.org/uploads/tx_nbc2/LenovoThinkPadP17-G1__1__01.png,1024,12,20,5.60,2013,16
-HP,Envy,https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05993006.png,256,4,21,2.95,2013,14
-Dell,Latitude,https://m.media-amazon.com/images/I/71OpHjEDdSL._AC_SY450_.jpg,512,4,22,1.98,2018,13
-Lenovo,Yoga,https://www.notebookcheck.org/uploads/tx_nbc2/yoga7i_01.jpg,1024,16,23,5.03,2020,15
-HP,Pavilion,https://m.media-amazon.com/images/I/81KBKqy7EmL._AC_SX450_.jpg,1024,12,24,6.86,2011,11.1
-Dell,Precision,https://www.notebookcheck.org/uploads/tx_nbc2/laptop-precision-7550-pdp-mod-6.jpg,256,4,25,8.64,2019,13.1
-Lenovo,IdeaPad,https://i.imgur.com/y9WWis4.png,512,8,26,7.65,2019,14
-HP,Spectre,https://i.imgur.com/zQudqJj.jpg,1024,12,27,3.42,2012,14
-Dell,XPS,https://i.imgur.com/6Vn0rlY.jpg,512,4,28,5.34,2014,13
-Apple,Macbook Air,https://i.imgur.com/WXaSaKE.jpg,1024,8,29,3.89,2011,15
-Apple,Macbook Pro,https://i.imgur.com/CxMTWrj.jpg,256,4,30,6.62,2018,14
-Asus,Zenbook,https://i.imgur.com/JZGLX8f.jpg,256,8,31,6.01,2012,13
-Alienware,X15,https://i.imgur.com/7ctFyMk.jpg,512,12,32,8.53,2019,15
-Huawei,Matebook,https://i.imgur.com/RG5MHsB.jpg,1024,16,33,2.87,2014,11.1
-LG,Xnote,https://i.imgur.com/UmMWBl7.jpg,1024,4,34,8.64,2015,13.1
-Microsoft,Surface,https://i.imgur.com/ZhsdL2r.jpg,256,4,35,7.21,2017,15
-Samsung,Galaxy Book,https://i.imgur.com/qfTVEIl.png,512,16,36,3.08,2013,11.1
-Acer,Aspire,https://i.imgur.com/C1EStWH.png,1024,12,37,9.45,2016,13.1
-Acer,Enduro,https://i.imgur.com/bh5ARt8.jpg,512,4,38,7.13,2015,14
-Acer,Spin,https://i.imgur.com/740JpFY.jpg,1024,8,39,3.12,2018,16
-LG,Gram,https://i.imgur.com/nXfGB0b.jpg,256,12,40,8.65,2013,14
-Alienware,X16,https://technave.com/data/files/article/202201100411578916.jpg,512,4,41,4.77,2013,13
-Alienware,Area 51,https://www.notebookcheck.org/uploads/tx_nbc2/AlienwareArea-51mR2__1__01.JPG,1024,4,42,9.38,2013,15
-Asus,Aspire,https://i.pcmag.com/imagery/reviews/03ksCEsV4CzjGslZopS0M0X-1.fit_scale.size_1028x578.v1639343189.jpg,1024,16,43,9.40,2011,11.1
-Asus,Vivobook,https://m.media-amazon.com/images/I/81TvoxUJCaL._AC_SY450_.jpg,256,12,44,3.13,2022,13.1
-Lenovo,Thinkpad,https://www.notebookcheck.org/uploads/tx_nbc2/LenovoThinkPadP17-G1__1__01.png,512,4,45,7.98,2014,14
-HP,Envy,https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05993006.png,1024,8,46,9.10,2020,14
-Dell,Latitude,https://m.media-amazon.com/images/I/71OpHjEDdSL._AC_SY450_.jpg,512,12,47,3.64,2020,13
-Lenovo,Yoga,https://www.notebookcheck.org/uploads/tx_nbc2/yoga7i_01.jpg,1024,4,48,2.33,2010,15
-HP,Pavilion,https://m.media-amazon.com/images/I/81KBKqy7EmL._AC_SX450_.jpg,256,8,49,6.19,2012,14
-Dell,Precision,https://www.notebookcheck.org/uploads/tx_nbc2/laptop-precision-7550-pdp-mod-6.jpg,256,4,50,4.89,2017,13
-Lenovo,IdeaPad,https://i.imgur.com/y9WWis4.png,512,4,51,4.29,2021,15
-HP,Spectre,https://i.imgur.com/zQudqJj.jpg,1024,8,52,4.39,2017,11.1
-Dell,XPS,https://i.imgur.com/6Vn0rlY.jpg,1024,4,53,6.97,2020,13.1
-Apple,Macbook Air,https://i.imgur.com/WXaSaKE.jpg,256,8,54,2.23,2018,15
-Apple,Macbook Pro,https://i.imgur.com/CxMTWrj.jpg,512,12,55,5.05,2017,11.1
-Asus,Zenbook,https://i.imgur.com/JZGLX8f.jpg,1024,16,56,5.07,2017,13.1
-Alienware,X15,https://i.imgur.com/7ctFyMk.jpg,512,4,57,5.77,2014,16
-Huawei,Matebook,https://i.imgur.com/RG5MHsB.jpg,1024,16,58,6.88,2012,14
-LG,Xnote,https://i.imgur.com/UmMWBl7.jpg,256,12,59,1.43,2014,13
-Microsoft,Surface,https://i.imgur.com/ZhsdL2r.jpg,512,4,60,8.32,2015,15
-Samsung,Galaxy Book,https://i.imgur.com/qfTVEIl.png,1024,8,61,8.49,2019,11.1
-Acer,Aspire,https://i.imgur.com/C1EStWH.png,1024,12,62,7.48,2022,13.1
-Acer,Enduro,https://i.imgur.com/bh5ARt8.jpg,256,4,63,4.49,2015,14
-Acer,Spin,https://i.imgur.com/740JpFY.jpg,256,8,64,4.93,2013,14
-LG,Gram,https://i.imgur.com/nXfGB0b.jpg,512,4,65,2.66,2022,13
-Alienware,X16,https://technave.com/data/files/article/202201100411578916.jpg,1024,16,66,9.15,2018,15
-Alienware,Area 51,https://www.notebookcheck.org/uploads/tx_nbc2/AlienwareArea-51mR2__1__01.JPG,1024,12,67,3.14,2022,14
-Asus,Aspire,https://i.pcmag.com/imagery/reviews/03ksCEsV4CzjGslZopS0M0X-1.fit_scale.size_1028x578.v1639343189.jpg,256,4,68,9.38,2014,13
-Asus,Vivobook,https://m.media-amazon.com/images/I/81TvoxUJCaL._AC_SY450_.jpg,512,8,69,8.63,2017,15
-Lenovo,Thinkpad,https://www.notebookcheck.org/uploads/tx_nbc2/LenovoThinkPadP17-G1__1__01.png,1024,12,70,1.61,2021,11.1
-HP,Envy,https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05993006.png,512,4,71,5.48,2015,13.1
-Dell,Latitude,https://m.media-amazon.com/images/I/71OpHjEDdSL._AC_SY450_.jpg,1024,4,72,8.07,2019,15
-Lenovo,Yoga,https://www.notebookcheck.org/uploads/tx_nbc2/yoga7i_01.jpg,256,16,73,4.01,2020,14
-HP,Pavilion,https://m.media-amazon.com/images/I/81KBKqy7EmL._AC_SX450_.jpg,512,12,74,1.21,2010,13
-Dell,Precision,https://www.notebookcheck.org/uploads/tx_nbc2/laptop-precision-7550-pdp-mod-6.jpg,1024,4,75,3.92,2015,15
-Lenovo,IdeaPad,https://i.imgur.com/y9WWis4.png,1024,8,76,8.19,2018,11.1
-HP,Spectre,https://i.imgur.com/zQudqJj.jpg,256,12,77,2.95,2017,13.1
-Dell,XPS,https://i.imgur.com/6Vn0rlY.jpg,512,4,78,4.93,2015,14
-Apple,Macbook Air,https://i.imgur.com/WXaSaKE.jpg,1024,8,79,1.87,2012,14
-Apple,Macbook Pro,https://i.imgur.com/CxMTWrj.jpg,512,4,80,7.60,2014,13
-Asus,Zenbook,https://i.imgur.com/JZGLX8f.jpg,1024,8,81,6.45,2016,15
-Alienware,X15,https://i.imgur.com/7ctFyMk.jpg,256,12,82,6.57,2019,11.1
-Huawei,Matebook,https://i.imgur.com/RG5MHsB.jpg,256,16,83,6.38,2011,13.1
-LG,Xnote,https://i.imgur.com/UmMWBl7.jpg,512,4,84,8.73,2011,12
-Microsoft,Surface,https://i.imgur.com/ZhsdL2r.jpg,1024,4,85,9.12,2011,14
-Samsung,Galaxy Book,https://i.imgur.com/qfTVEIl.png,1024,16,86,8.60,2013,12
-Acer,Aspire,https://i.imgur.com/C1EStWH.png,256,12,87,2.67,2021,15
-Acer,Enduro,https://i.imgur.com/bh5ARt8.jpg,512,4,88,4.56,2014,14
-Acer,Spin,https://i.imgur.com/740JpFY.jpg,1024,8,89,4.60,2016,13
-LG,Gram,https://i.imgur.com/nXfGB0b.jpg,512,12,90,7.52,2022,15
-Alienware,X16,https://technave.com/data/files/article/202201100411578916.jpg,1024,4,91,6.09,2011,11.1
-Alienware,Area 51,https://www.notebookcheck.org/uploads/tx_nbc2/AlienwareArea-51mR2__1__01.JPG,256,4,92,8.20,2014,13.1
-Asus,Aspire,https://i.pcmag.com/imagery/reviews/03ksCEsV4CzjGslZopS0M0X-1.fit_scale.size_1028x578.v1639343189.jpg,512,16,93,3.03,2017,15
-Asus,Vivobook,https://m.media-amazon.com/images/I/81TvoxUJCaL._AC_SY450_.jpg,1024,12,94,4.74,2012,11.1
-Lenovo,Thinkpad,https://www.notebookcheck.org/uploads/tx_nbc2/LenovoThinkPadP17-G1__1__01.png,1024,4,95,1.37,2013,13.1
-HP,Envy,https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05993006.png,256,8,96,5.36,2022,16
-Dell,Latitude,https://m.media-amazon.com/images/I/71OpHjEDdSL._AC_SY450_.jpg,512,12,97,9.54,2021,16
-Lenovo,Yoga,https://www.notebookcheck.org/uploads/tx_nbc2/yoga7i_01.jpg,1024,4,98,7.54,2016,16
-HP,Pavilion,https://m.media-amazon.com/images/I/81KBKqy7EmL._AC_SX450_.jpg,512,8,99,7.39,2011,16
-Dell,Precision,https://www.notebookcheck.org/uploads/tx_nbc2/laptop-precision-7550-pdp-mod-6.jpg,1024,4,100,8.41,2011,12
+brand,model,photo,hard_drive,ram,user,price,year_built,screen_size,address
+Lenovo,IdeaPad,https://i.imgur.com/y9WWis4.png,256,4,1,4.41,2018,14,"Carrer del Cadí, 38"
+HP,Spectre,https://i.imgur.com/zQudqJj.jpg,256,8,2,2.36,2014,13,"B, Carrer de la Reina Cristina, 89"
+Dell,XPS,https://i.imgur.com/6Vn0rlY.jpg,512,4,3,1.35,2019,15,"Carrer d'En Robador, 81"
+Apple,Macbook Air,https://i.imgur.com/WXaSaKE.jpg,1024,8,4,8.02,2011,11.1,"Carrer de Jaume I, 70"
+Apple,Macbook Pro,https://i.imgur.com/CxMTWrj.jpg,1024,12,5,8.94,2022,13.1,"Rambla del Raval, 12"
+Asus,Zenbook,https://i.imgur.com/JZGLX8f.jpg,256,16,6,6.89,2021,14,"Carrer d'Escòcia, 30"
+Alienware,X15,https://i.imgur.com/7ctFyMk.jpg,512,4,7,5.50,2017,14,"Carrer de Blai, 52"
+Huawei,Matebook,https://i.imgur.com/RG5MHsB.jpg,1024,16,8,5.34,2021,13,"Carrer de Sardenya, 63"
+LG,Xnote,https://i.imgur.com/UmMWBl7.jpg,512,12,9,2.66,2020,15,"Carrer d'en Tantarantana, 87"
+Microsoft,Surface,https://i.imgur.com/ZhsdL2r.jpg,1024,4,10,5.72,2012,14,"Carrer de València, 22"
+Samsung,Galaxy Book,https://i.imgur.com/qfTVEIl.png,256,8,11,7.55,2017,13,"Carrer de Regàs, 85"
+Acer,Aspire,https://i.imgur.com/C1EStWH.png,256,12,12,3.00,2016,15,"El Triangle, Plaça de Catalunya, 6"
+Acer,Enduro,https://i.imgur.com/bh5ARt8.jpg,512,4,13,7.55,2012,11.1,"Carrer de la Marina, 46"
+Acer,Spin,https://i.imgur.com/740JpFY.jpg,1024,8,14,4.25,2015,13.1,"Carrer dels Escudellers, 54"
+LG,Gram,https://i.imgur.com/nXfGB0b.jpg,1024,4,17,1.70,2020,15,
+Alienware,X16,https://technave.com/data/files/article/202201100411578916.jpg,256,16,16,9.79,2017,11.1,
+Alienware,Area 51,https://www.notebookcheck.org/uploads/tx_nbc2/AlienwareArea-51mR2__1__01.JPG,512,12,17,8.62,2010,13.1,
+Asus,Aspire,https://i.pcmag.com/imagery/reviews/03ksCEsV4CzjGslZopS0M0X-1.fit_scale.size_1028x578.v1639343189.jpg,1024,4,18,1.52,2010,16,
+Asus,Vivobook,https://m.media-amazon.com/images/I/81TvoxUJCaL._AC_SY450_.jpg,512,8,19,7.74,2013,16,
+Lenovo,Thinkpad,https://www.notebookcheck.org/uploads/tx_nbc2/LenovoThinkPadP17-G1__1__01.png,1024,12,20,5.60,2013,16,
+HP,Envy,https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05993006.png,256,4,21,2.95,2013,14,
+Dell,Latitude,https://m.media-amazon.com/images/I/71OpHjEDdSL._AC_SY450_.jpg,512,4,22,1.98,2018,13,
+Lenovo,Yoga,https://www.notebookcheck.org/uploads/tx_nbc2/yoga7i_01.jpg,1024,16,23,5.03,2020,15,
+HP,Pavilion,https://m.media-amazon.com/images/I/81KBKqy7EmL._AC_SX450_.jpg,1024,12,24,6.86,2011,11.1,
+Dell,Precision,https://www.notebookcheck.org/uploads/tx_nbc2/laptop-precision-7550-pdp-mod-6.jpg,256,4,25,8.64,2019,13.1,
+Lenovo,IdeaPad,https://i.imgur.com/y9WWis4.png,512,8,26,7.65,2019,14,
+HP,Spectre,https://i.imgur.com/zQudqJj.jpg,1024,12,27,3.42,2012,14,
+Dell,XPS,https://i.imgur.com/6Vn0rlY.jpg,512,4,28,5.34,2014,13,
+Apple,Macbook Air,https://i.imgur.com/WXaSaKE.jpg,1024,8,29,3.89,2011,15,
+Apple,Macbook Pro,https://i.imgur.com/CxMTWrj.jpg,256,4,30,6.62,2018,14,
+Asus,Zenbook,https://i.imgur.com/JZGLX8f.jpg,256,8,31,6.01,2012,13,
+Alienware,X15,https://i.imgur.com/7ctFyMk.jpg,512,12,32,8.53,2019,15,
+Huawei,Matebook,https://i.imgur.com/RG5MHsB.jpg,1024,16,33,2.87,2014,11.1,
+LG,Xnote,https://i.imgur.com/UmMWBl7.jpg,1024,4,34,8.64,2015,13.1,
+Microsoft,Surface,https://i.imgur.com/ZhsdL2r.jpg,256,4,35,7.21,2017,15,
+Samsung,Galaxy Book,https://i.imgur.com/qfTVEIl.png,512,16,36,3.08,2013,11.1,
+Acer,Aspire,https://i.imgur.com/C1EStWH.png,1024,12,37,9.45,2016,13.1,
+Acer,Enduro,https://i.imgur.com/bh5ARt8.jpg,512,4,38,7.13,2015,14,
+Acer,Spin,https://i.imgur.com/740JpFY.jpg,1024,8,39,3.12,2018,16,
+LG,Gram,https://i.imgur.com/nXfGB0b.jpg,256,12,40,8.65,2013,14,
+Alienware,X16,https://technave.com/data/files/article/202201100411578916.jpg,512,4,41,4.77,2013,13,
+Alienware,Area 51,https://www.notebookcheck.org/uploads/tx_nbc2/AlienwareArea-51mR2__1__01.JPG,1024,4,42,9.38,2013,15,
+Asus,Aspire,https://i.pcmag.com/imagery/reviews/03ksCEsV4CzjGslZopS0M0X-1.fit_scale.size_1028x578.v1639343189.jpg,1024,16,43,9.40,2011,11.1,
+Asus,Vivobook,https://m.media-amazon.com/images/I/81TvoxUJCaL._AC_SY450_.jpg,256,12,44,3.13,2022,13.1,
+Lenovo,Thinkpad,https://www.notebookcheck.org/uploads/tx_nbc2/LenovoThinkPadP17-G1__1__01.png,512,4,45,7.98,2014,14,
+HP,Envy,https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05993006.png,1024,8,46,9.10,2020,14,
+Dell,Latitude,https://m.media-amazon.com/images/I/71OpHjEDdSL._AC_SY450_.jpg,512,12,47,3.64,2020,13,
+Lenovo,Yoga,https://www.notebookcheck.org/uploads/tx_nbc2/yoga7i_01.jpg,1024,4,48,2.33,2010,15,
+HP,Pavilion,https://m.media-amazon.com/images/I/81KBKqy7EmL._AC_SX450_.jpg,256,8,49,6.19,2012,14,
+Dell,Precision,https://www.notebookcheck.org/uploads/tx_nbc2/laptop-precision-7550-pdp-mod-6.jpg,256,4,50,4.89,2017,13,
+Lenovo,IdeaPad,https://i.imgur.com/y9WWis4.png,512,4,51,4.29,2021,15,
+HP,Spectre,https://i.imgur.com/zQudqJj.jpg,1024,8,52,4.39,2017,11.1,
+Dell,XPS,https://i.imgur.com/6Vn0rlY.jpg,1024,4,53,6.97,2020,13.1,
+Apple,Macbook Air,https://i.imgur.com/WXaSaKE.jpg,256,8,54,2.23,2018,15,
+Apple,Macbook Pro,https://i.imgur.com/CxMTWrj.jpg,512,12,55,5.05,2017,11.1,
+Asus,Zenbook,https://i.imgur.com/JZGLX8f.jpg,1024,16,56,5.07,2017,13.1,
+Alienware,X15,https://i.imgur.com/7ctFyMk.jpg,512,4,57,5.77,2014,16,
+Huawei,Matebook,https://i.imgur.com/RG5MHsB.jpg,1024,16,58,6.88,2012,14,
+LG,Xnote,https://i.imgur.com/UmMWBl7.jpg,256,12,59,1.43,2014,13,
+Microsoft,Surface,https://i.imgur.com/ZhsdL2r.jpg,512,4,60,8.32,2015,15,
+Samsung,Galaxy Book,https://i.imgur.com/qfTVEIl.png,1024,8,61,8.49,2019,11.1,
+Acer,Aspire,https://i.imgur.com/C1EStWH.png,1024,12,62,7.48,2022,13.1,
+Acer,Enduro,https://i.imgur.com/bh5ARt8.jpg,256,4,63,4.49,2015,14,
+Acer,Spin,https://i.imgur.com/740JpFY.jpg,256,8,64,4.93,2013,14,
+LG,Gram,https://i.imgur.com/nXfGB0b.jpg,512,4,65,2.66,2022,13,
+Alienware,X16,https://technave.com/data/files/article/202201100411578916.jpg,1024,16,66,9.15,2018,15,
+Alienware,Area 51,https://www.notebookcheck.org/uploads/tx_nbc2/AlienwareArea-51mR2__1__01.JPG,1024,12,67,3.14,2022,14,
+Asus,Aspire,https://i.pcmag.com/imagery/reviews/03ksCEsV4CzjGslZopS0M0X-1.fit_scale.size_1028x578.v1639343189.jpg,256,4,68,9.38,2014,13,
+Asus,Vivobook,https://m.media-amazon.com/images/I/81TvoxUJCaL._AC_SY450_.jpg,512,8,69,8.63,2017,15,
+Lenovo,Thinkpad,https://www.notebookcheck.org/uploads/tx_nbc2/LenovoThinkPadP17-G1__1__01.png,1024,12,70,1.61,2021,11.1,
+HP,Envy,https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05993006.png,512,4,71,5.48,2015,13.1,
+Dell,Latitude,https://m.media-amazon.com/images/I/71OpHjEDdSL._AC_SY450_.jpg,1024,4,72,8.07,2019,15,
+Lenovo,Yoga,https://www.notebookcheck.org/uploads/tx_nbc2/yoga7i_01.jpg,256,16,73,4.01,2020,14,
+HP,Pavilion,https://m.media-amazon.com/images/I/81KBKqy7EmL._AC_SX450_.jpg,512,12,74,1.21,2010,13,
+Dell,Precision,https://www.notebookcheck.org/uploads/tx_nbc2/laptop-precision-7550-pdp-mod-6.jpg,1024,4,75,3.92,2015,15,
+Lenovo,IdeaPad,https://i.imgur.com/y9WWis4.png,1024,8,76,8.19,2018,11.1,
+HP,Spectre,https://i.imgur.com/zQudqJj.jpg,256,12,77,2.95,2017,13.1,
+Dell,XPS,https://i.imgur.com/6Vn0rlY.jpg,512,4,78,4.93,2015,14,
+Apple,Macbook Air,https://i.imgur.com/WXaSaKE.jpg,1024,8,79,1.87,2012,14,
+Apple,Macbook Pro,https://i.imgur.com/CxMTWrj.jpg,512,4,80,7.60,2014,13,
+Asus,Zenbook,https://i.imgur.com/JZGLX8f.jpg,1024,8,81,6.45,2016,15,
+Alienware,X15,https://i.imgur.com/7ctFyMk.jpg,256,12,82,6.57,2019,11.1,
+Huawei,Matebook,https://i.imgur.com/RG5MHsB.jpg,256,16,83,6.38,2011,13.1,
+LG,Xnote,https://i.imgur.com/UmMWBl7.jpg,512,4,84,8.73,2011,12,
+Microsoft,Surface,https://i.imgur.com/ZhsdL2r.jpg,1024,4,85,9.12,2011,14,
+Samsung,Galaxy Book,https://i.imgur.com/qfTVEIl.png,1024,16,86,8.60,2013,12,
+Acer,Aspire,https://i.imgur.com/C1EStWH.png,256,12,87,2.67,2021,15,
+Acer,Enduro,https://i.imgur.com/bh5ARt8.jpg,512,4,88,4.56,2014,14,
+Acer,Spin,https://i.imgur.com/740JpFY.jpg,1024,8,89,4.60,2016,13,
+LG,Gram,https://i.imgur.com/nXfGB0b.jpg,512,12,90,7.52,2022,15,
+Alienware,X16,https://technave.com/data/files/article/202201100411578916.jpg,1024,4,91,6.09,2011,11.1,
+Alienware,Area 51,https://www.notebookcheck.org/uploads/tx_nbc2/AlienwareArea-51mR2__1__01.JPG,256,4,92,8.20,2014,13.1,
+Asus,Aspire,https://i.pcmag.com/imagery/reviews/03ksCEsV4CzjGslZopS0M0X-1.fit_scale.size_1028x578.v1639343189.jpg,512,16,93,3.03,2017,15,
+Asus,Vivobook,https://m.media-amazon.com/images/I/81TvoxUJCaL._AC_SY450_.jpg,1024,12,94,4.74,2012,11.1,
+Lenovo,Thinkpad,https://www.notebookcheck.org/uploads/tx_nbc2/LenovoThinkPadP17-G1__1__01.png,1024,4,95,1.37,2013,13.1,
+HP,Envy,https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05993006.png,256,8,96,5.36,2022,16,
+Dell,Latitude,https://m.media-amazon.com/images/I/71OpHjEDdSL._AC_SY450_.jpg,512,12,97,9.54,2021,16,
+Lenovo,Yoga,https://www.notebookcheck.org/uploads/tx_nbc2/yoga7i_01.jpg,1024,4,98,7.54,2016,16,
+HP,Pavilion,https://m.media-amazon.com/images/I/81KBKqy7EmL._AC_SX450_.jpg,512,8,99,7.39,2011,16,
+Dell,Precision,https://www.notebookcheck.org/uploads/tx_nbc2/laptop-precision-7550-pdp-mod-6.jpg,1024,4,100,8.41,2011,12,
