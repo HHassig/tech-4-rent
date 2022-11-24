@@ -21,14 +21,13 @@ csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
 csv.each do |row|
   file = URI.open(row["photo"])
   puts "opened url #{row["photo"]}"
-  laptop = Laptop.new({ year_built: row["year_built"], brand: row["brand"], model: row["model"], screen_size: row["screen_size"], hard_drive: row["hard_drive"], ram: row["ram"], user_id: row["user"].to_i, price: row["price"] })
+  laptop = Laptop.new({ year_built: row["year_built"], brand: row["brand"], model: row["model"], screen_size: row["screen_size"], hard_drive: row["hard_drive"], ram: row["ram"], user_id: row["user"].to_i, price: row["price"], address: row["address"] })
   puts "laptop.new done"
   laptop.photo.attach(io: file, content_type: "image/png", filename: "laptop#{laptop.id}.jpg")
   puts "attached photo"
   laptop.save!
   puts "saved"
 end
-
 
 csv_text = File.read(Rails.root.join('lib','seeds','bookings.csv'))
 csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')

@@ -12,6 +12,7 @@ class LaptopsController < ApplicationController
 
   def show
     @laptop = Laptop.find(params[:id])
+    @markers = { lat: @laptop.latitude, lng: @laptop.longitude }
   end
 
   def new
@@ -28,9 +29,9 @@ class LaptopsController < ApplicationController
     end
   end
 
-  def detroy
+  def destroy
     @laptop.destroy
-    redirect_to laptop_path
+    redirect_to laptops_path
   end
 
   private
