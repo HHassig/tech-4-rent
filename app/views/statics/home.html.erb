@@ -27,7 +27,7 @@
 <div class="laptop-title">
   <h2>Top Rated</h2>
   <div class="cards-container">
-    <% @laptops.[5..8].each do |laptop| %>
+    <% @laptops[5..8].each do |laptop| %>
     <div class="laptop-card">
       <%= cl_image_tag(laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
         <div class="specs">
