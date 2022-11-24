@@ -22,7 +22,7 @@ class LaptopsController < ApplicationController
     @laptop = Laptop.new(laptop_params)
     @laptop.user = current_user
     if @laptop.save!
-      redirect_to laptop_path(@laptop), notice: 'List was successfully created.'
+      redirect_to laptop_path(@laptop), notice: 'Laptop was successfully created.'
     else
       render :new
     end
