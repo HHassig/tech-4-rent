@@ -1,4 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
+// import * as mapboxgl from 'mapbox-gl';
+// (mapboxgl as any).accessToken = mapboxAccessToken;
 // import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
 
 // Connects to data-controller="mapbox"
