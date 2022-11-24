@@ -3,10 +3,10 @@ class LaptopsController < ApplicationController
   before_action :set_laptop, only: %i[destroy]
 
   def index
-    @laptops = Laptop.all.paginate(:page => params[:page], :per_page => 12)
-    if params[:search]
+    @laptops = Laptop.all.paginate(page: params[:page], per_page: 12)
+    if params[:search].present?
       @search_term = params[:search]
-      @laptops = @laptops.where("brand ILIKE ?", "#{@search_term}")
+      @laptops = @laptops.where("brand ILIKE ?", "%#{@search_term}%")
     end
   end
 
