@@ -20,16 +20,16 @@
       <h2>checkout</h2>
       <div class="form-styled" >
         <%= simple_form_for @booking do |f| %>
-        <p>Select how many days you want to rent it</p>
-          <%= f.select(:duration, options_for_select(1..30))%>
+        <p>Select the starting date</p>
+          <%= f.input(:start_date, as: :date)%>
+        <p>Select the ending date</p>
+          <%= f.input(:end_date, as: :date)%>
       </div>
           <%= f.submit class:"btn-rent", value:"Book" %>
         <% end %>
     </div>
   </div>
-
 </div>
-
 
 <div class="laptop-title">
   <h2>Similar products</h2>

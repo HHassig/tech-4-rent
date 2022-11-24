@@ -20,7 +20,7 @@ class BookingsController < ApplicationController
     @booking.laptop = @laptop
     @booking.user = current_user
     @booking.save
-    (params[:duration] * @laptop.price)
+    total_booking_price = (Date.parse(params[:end_date]) - Date.parse(params[:start_date])) * @laptop.price
     redirect_to laptop_booking_path(@laptop)
   end
 
