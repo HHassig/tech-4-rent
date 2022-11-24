@@ -41,7 +41,7 @@
         <div class="specs">
           <h4><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %></h4>
           <p class ="laptop-text"> HDD/SSD: <%= laptop.hard_drive %>, Ram: <%= laptop.ram %>, <%= laptop.screen_size%>"</p>
-          <h5 class ="laptop-text">€<%= laptop.price %>/hour </h5>
+          <h5 class ="laptop-text">€<%= laptop.price %>/day </h5>
           </a>
         </div>
       </div>
@@ -51,7 +51,7 @@
 
 
 
-<div id="right-side">
+<div id="right-side" style="width: 100%;">
   <div style="width: 100%; height: 600px;"
   data-controller="map"
   data-map-markers-value="<%= @markers.to_json %>"
