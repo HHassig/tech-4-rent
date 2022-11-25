@@ -53,8 +53,6 @@ class LaptopsController < ApplicationController
     redirect_to laptops_path
   end
 
-
-
   private
 
   def laptop_params
