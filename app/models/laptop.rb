@@ -9,6 +9,6 @@ class Laptop < ApplicationRecord
   private
 
   def set_defaults
-    self.average_rating ||= 0.0
+    self.average_rating ||= "No reviews yet"
   end
 end
