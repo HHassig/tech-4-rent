@@ -1,5 +1,17 @@
-<h1>All Bookings</h1>
-
-bookings where the user id display bookings
-
-<%= link_to 'Create a new booking', laptops_path %>
+<div class="laptop-title">
+  <h2>Your bookings</h2>
+  <div class="cards-container">
+    <% @user_bookings.each do |booking| %>
+    <div class="laptop-card">
+      <a href=<%=laptop_path(booking.laptop)%>>
+      <%= cl_image_tag(booking.laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
+        <div class="specs">
+          <h4><%= booking.laptop.brand %> <%= booking.laptop.model %> | <%= booking.laptop.year_built %><%= "| #{("⭐" * booking.laptop.average_rating)}" if booking.laptop.average_rating > 0 %></h4>
+          <p class ="laptop-text"> HDD/SSD: <%= booking.laptop.hard_drive %>, RAM: <%= booking.laptop.ram %>, <%= booking.laptop.screen_size %>"</p>
+          <h5 class ="laptop-text">€<%= '%.2f' % (booking.laptop.price * 10) %>/day </h5>
+          <a href=<%=laptop_path(booking.laptop)%> class="btn-rent"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
