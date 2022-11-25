@@ -23,9 +23,7 @@
       <h2>Checkout</h2>
       <div class="form-styled" >
         <%= simple_form_for [@laptop, @booking] do |f| %>
-        <p>Select <strong>start</strong> date</p>
           <%= f.input(:start_date, as: :date)%>
-        <p>Select <strong>end</strong> date</p>
           <%= f.input(:end_date, as: :date)%>
           <%= f.submit class:"btn-rent", value:"Book" %>
       </div>
