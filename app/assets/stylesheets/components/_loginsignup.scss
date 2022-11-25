@@ -1,23 +1,34 @@
 .container {
   position: relative;
-  width: 30%;
-  z-index: 1000;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.container h2{
-  color: #d1e751;
+.btn-login, .btn-login a, .btn-login button {
   text-transform: uppercase;
-  font-family: 'Roboto Condensed';
-  font-style: italic;
-  font-weight: 700;
+  align-self: flex-start;
+  border: 2px solid #d1e751;
+  color: #d1e751 !important;
+  margin: 7px;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-inline: 10px;
+  text-decoration: none;
 }
 
+.btn-login:hover, .btn-login:hover a, .btn-login:hover button {
+  color: black !important;
+  border: 2px solid black;
+}
+
+
 .btn-signs {
+  text-transform: uppercase;
   align-self: flex-start;
-  background-color: #d1e751;
+  background-color: #8de751;
   color: white;
   margin: 7px;
   border-radius: 8px;
@@ -29,7 +40,11 @@
 
 .btn-signs:hover {
   color: black;
-  text-size-adjust: 0;
+  background: #d1e751;
+}
+
+.btn-pass {
+  color: rgb(178, 36, 36) !important;
 }
 
 .specs {
@@ -40,9 +55,9 @@
   flex-direction: column;
 }
 
-.form-actions .btn-signs{
+.form-actions .btn-sign {
   align-self: flex-start;
-  background-color: #d1e751;
+  background-color: #86c831;
   color: white;
   margin: 7px;
   border-radius: 8px;
