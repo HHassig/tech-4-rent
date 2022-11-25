@@ -71,6 +71,6 @@ class LaptopsController < ApplicationController
     reviews.each do |review_object|
       sum += review_object.review
     end
-    return sum.to_f / reviews.count.round(1)
+    return sum.to_f / reviews.count.round(2)
   end
 end
