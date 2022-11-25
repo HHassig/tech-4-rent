@@ -18,7 +18,7 @@
 <div>
   <%= @total_booking_price %>
   <div id="right-side">
-    <div class="laptop-title">
+    <div class="laptop-title" id="booking">
       <h2>Checkout</h2>
       <div class="form-styled" >
         <%= simple_form_for [@laptop, @booking] do |f| %>
@@ -31,7 +31,7 @@
   </div>
 </div>
 
-<div class="laptop-title">
+<div class="laptop-title" style="width:100%">
   <div id="right-side" style="width:90%; margin-left: 1.5%;">
     <div style="width: 100%; height: 300px;"
     data-controller="map"
