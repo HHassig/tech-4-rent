@@ -4,8 +4,8 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = Booking.all
-    @user_bookings = Booking.where(user_id: current_user.id)
     @laptops = Laptop.all
+    @user_bookings = Booking.where(user_id: current_user.id)
   end
 
   def show
