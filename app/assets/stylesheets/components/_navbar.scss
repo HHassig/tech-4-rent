@@ -28,10 +28,11 @@
 
 .patatas input {
   float: center;
-  border: 2px solid #d1e751;
+  border: 1.7px solid #d1e751;
+  border-radius: 13px;
   padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
+  width: 400px;
+  margin-right: 130px;
   font-size: 17px;
 }
 
@@ -41,4 +42,20 @@
 
 .patatas a {
   background-color: #d1e751;
+}
+
+.nav-link {
+  color: black;
+  padding-top: 2px;
+  border: 1.7px solid black;
+  padding-bottom: 2px;
+  border-radius: 15px;
+}
+
+.nav-link:hover {
+  color: white;
+  padding-top: 2px;
+  background: black;
+  padding-bottom: 2px;
+  border-radius: 15px;
 }
