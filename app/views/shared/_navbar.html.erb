@@ -9,7 +9,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
       <div class="patatas">
-        <%= form_for "", url: laptops_path, role: "search", method: :get do%>
+        <%= form_for "", url: laptops_path, role: "search", method: :get do %>
           <%= text_field_tag :search, @search_term, class:"input-search", placeholder: "Search.." %>
         <% end %>
       </div>
