@@ -8,10 +8,18 @@ class LaptopsController < ApplicationController
       laptop.average_rating = all_reviews(laptop)
       laptop.save
     end
-    @laptops = @laptops.paginate(:page => params[:page], :per_page => 12)
+    @laptops = @laptops.paginate(page: params[:page], per_page: 12)
     if params[:search].present?
+      sql_query = <<~SQL
+        laptops.brand @@ :query
+        OR laptops.model @@ :query
+        OR CAST(laptops.year_built AS varchar) @@ :query
+        OR CAST(laptops.ram AS varchar) @@ :query
+        OR CAST(laptops.screen_size AS varchar) @@ :query
+        OR CAST(laptops.hard_drive AS varchar) @@ :query
+      SQL
       @search_term = params[:search]
-      @laptops = @laptops.where("brand ILIKE ?", "%#{@search_term}%")
+      @laptops = @laptops.where(sql_query, query: "%#{@search_term}%")
     end
   end
 
@@ -56,7 +64,8 @@ class LaptopsController < ApplicationController
   private
 
   def laptop_params
-    params.require(:laptop).permit(:brand, :year_built, :model, :screen_size, :hard_drive, :ram, :user, :price, :photo, :address)
+    params.require(:laptop).permit(:brand, :year_built, :model, :screen_size, :hard_drive, :ram, :user, :price, :photo,
+                                   :address)
   end
 
   def set_laptop
@@ -64,7 +73,7 @@ class LaptopsController < ApplicationController
   end
 
   def all_reviews(laptop)
-    reviews = Review.where(laptop: laptop)
+    reviews = Review.where(laptop:)
     sum = 0
     reviews.each do |review_object|
       sum += review_object.review
