@@ -19,9 +19,8 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.laptop = @laptop
     @booking.user = current_user
-    @booking.save
-    total_booking_price = (Date.parse(params[:end_date]) - Date.parse(params[:start_date])) * @laptop.price
-    redirect_to laptop_booking_path(@laptop)
+    @booking.save!
+    redirect_to laptop_bookings_path(@booking)
   end
 
   def destroy
@@ -37,7 +36,7 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:user, :laptop_id).permit(:duration)
+    params.require(:booking).permit(:start_date, :end_date)
   end
 
   def set_booking
