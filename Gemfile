@@ -82,3 +82,4 @@ gem "cloudinary"
 gem 'will_paginate', '~> 3.3'
 gem "geocoder"
 gem "pg_search"
+gem "time_diff"

@@ -9,7 +9,7 @@
           <h4><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %><%= "| #{("⭐" * laptop.average_rating)}" if laptop.average_rating > 0 %></h4>
           <p class ="laptop-text"> HDD/SSD: <%= laptop.hard_drive %>, RAM: <%= laptop.ram %>, <%= laptop.screen_size %>"</p>
           <h5 class ="laptop-text">€<%= '%.2f' % (laptop.price * 10) %>/day </h5>
-          </a>
+          <a href=<%=laptop_path(laptop)%> class="btn-rent"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
       </div>
     <% end %>
