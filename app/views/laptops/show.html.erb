@@ -2,7 +2,7 @@
 
   <div id="left-side" style="width: 60%;">
     <div class="laptop-title">
-      <h2><%= @laptop.brand %> <%= @laptop.model %> | <%= @laptop.year_built %></h2>
+      <h2><%= @laptop.brand %> <%= @laptop.model %> | <%= @laptop.year_built %><%= " | #{("⭐" * @laptop.average_rating)}" if @laptop.average_rating > 0 %> </h2>
       <div class="product-specs">
         <%= cl_image_tag(@laptop.photo.key, :class=>"booking-image", :alt=>"laptop image", :width=>350, :height=>250) %>
         <h3>Specs</h3>
@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  <div>
+<div>
 <h1>Booking</h1>
 <%= @total_booking_price %>
   <div id="right-side">
@@ -36,6 +36,16 @@
 </div>
 
 <div class="laptop-title">
+  <div id="right-side" style="width:90%; margin-left: 1.5%;">
+    <div style="width: 100%; height: 300px;"
+    data-controller="map"
+    data-map-markers-value="<%= @markers.to_json %>"
+    data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+  </div>
+</div>
+
+<div class="laptop-title">
   <h2>Similar products</h2>
   <div class="cards-container">
     <% @laptops[5..8].each do |laptop| %>
@@ -43,22 +53,12 @@
       <a href=<%=laptop_path(laptop)%>>
       <%= cl_image_tag(laptop.photo.key, :class=>"laptop-image", :alt=>"laptop image", :width=>350, :height=>250) %>
         <div class="specs">
-          <h4><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %></h4>
+          <h4><%= laptop.brand %> <%= laptop.model %> | <%= laptop.year_built %><%= " | #{("⭐" * laptop.average_rating)}" if laptop.average_rating > 0 %> </h4>
           <p class ="laptop-text"> HDD/SSD: <%= laptop.hard_drive %>, Ram: <%= laptop.ram %>, <%= laptop.screen_size%>"</p>
-          <h5 class ="laptop-text">€<%= laptop.price %>/hour </h5>
+          <h5 class ="laptop-text">€<%= '%.2f' % (laptop.price * 10) %>/day </h5>
           </a>
         </div>
       </div>
     <% end %>
-  </div>
-</div>
-
-
-
-<div id="right-side">
-  <div style="width: 100%; height: 600px;"
-  data-controller="map"
-  data-map-markers-value="<%= @markers.to_json %>"
-  data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
 </div>

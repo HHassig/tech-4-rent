@@ -2,13 +2,14 @@
   <h2>Post a new laptop</h2>
     <div class="form-group" style="width: 500px" >
       <%= simple_form_for @laptop, data:{turbo: false} do |f| %>
-        <%= f.input :brand, placeholder: 'Apple' %>
-        <%= f.input :model, placeholder: 'Air' %>
+        <%= f.input :brand, placeholder: 'Apple', required: true  %>
+        <%= f.input :model, placeholder: 'Air', required: true  %>
         <%= f.input :screen_size, placeholder: '11.1' %>
-        <%= f.input :hard_drive, placeholder: '1024' %>
-        <%= f.input :ram, placeholder: '16' %>
-        <%= f.input :year_built, placeholder: '2023' %>
-        <%= f.input :photo, as: :file %>
+        <%= f.input :hard_drive, placeholder: '1024', required: true  %>
+        <%= f.input :ram, placeholder: '16', required: true  %>
+        <%= f.input :year_built, placeholder: '2022' %>
+        <%= f.input :address, placeholder: 'Lewagon, BCN' %>
+        <%= f.input :photo, as: :file, required: true %>
         <%= f.submit class:"btn-rent" %>
       <% end %>
     </div>
