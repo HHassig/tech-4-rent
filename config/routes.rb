@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   resources :laptops do
     resources :bookings, only: %i[show destroy new create index]
   end
-  resources :bookings, only: %i[edit update destroy]
+  resources :bookings, only: %i[edit update destroy show]
 end
